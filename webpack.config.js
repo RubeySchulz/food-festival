@@ -38,6 +38,13 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        static: {
+          directory: __dirname,
+        },
+        compress: true,
+        port: 9000,
+    },
     plugins: [
         new webpack.ProvidePlugin({
             $: 'jquery',
